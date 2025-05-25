@@ -38,6 +38,7 @@
         background-color: #21262d;
         align-items: center;
         color: whitesmoke;
+        padding: 20px;
       }
       .container img {
         max-width: 50%;
@@ -93,7 +94,6 @@
         color: white;
       }
       .certification-card {
-        /* border: 1px solid #ccc; */
         border-radius: 5px;
         padding: 20px;
         width: 348px;
@@ -109,7 +109,7 @@
       .certification-description {
         font-size: 14px;
       }
-      a{
+      a {
         color: white;
       }
       footer {
@@ -142,6 +142,32 @@
         margin-top: 12px;
         margin-bottom: 5px;
       }
+
+      /* Mobile responsive styles */
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .container img {
+          margin: 0 auto 20px;
+          max-width: 70%;
+        }
+
+        .details a {
+          display: inline-block;
+          margin: 5px;
+        }
+
+        .photo {
+          width: 50vw;
+        }
+
+        footer .social-buttons a img {
+          height: 6vw;
+        }
+      }
     </style>
   </head>
   <body>
@@ -159,7 +185,7 @@
           Highly skilled and innovative web developer with 2 years of
           experience in designing, developing, and maintaining responsive
           websites and web applications. Proficient in front-end and back-end
-          technologies, including HTML5, CSS3, JavaScript and Bootstrap,. Solid
+          technologies, including HTML5, CSS3, JavaScript and Bootstrap. Solid
           understanding of web development.
         </p>
         <p>Contact me at: jalaharsha125@gmail.com</p>
@@ -213,7 +239,6 @@
         </div>
       </div>
       <a href="https://www.hackerrank.com/certificates/55cfb09649be">
-
         <div class="certification-card">
           <div class="certification-title">Python Basic Certificate</div>
           <div class="certification-description">
